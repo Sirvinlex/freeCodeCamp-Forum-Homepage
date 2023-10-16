@@ -1,38 +1,104 @@
-.App {
+.title{
   text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  color: rgb(73, 70, 70);
+}
+.table-container{
+  margin-bottom: 40px;
+}
+table {
+  border-collapse: collapse;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+td,
+th {
+  /* border: none; */
+  border-left: 1px solid #ccc1c1;
+  border-right: 1px solid #ccc1c1;
+  text-align: left;
+  padding: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+tr:nth-child(even) {
+  background-color: white;
+  /* background-color: #dddddd; */
+}
+tr{
+  height: fit-content;
+}
+.post-link{
+  text-decoration: none;
+  color: black;
+}
+.post-link:hover{
+  text-decoration: underline;
+  color: rgb(27, 27, 124);
+}
+.user-link{
+  text-decoration: none;
+  color: black;
+}
+.poster-img{
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  margin: 2px;
+}
+.hd1{
+  width: 4%;
+  border-left: none;
+  border-bottom: 1px solid #ccc1c1;
+  border-right: none;
+}
+.hd2{
+  width: 46%;
+  border-left: none;
+  border-bottom: 1px solid #ccc1c1;
+  border-right: none;
+}
+.hd3{
+  width: 21%;
+  border-left: none;
+  border-bottom: 1px solid #ccc1c1;
+  border-right: none;
+}
+.hd4{
+  width: 9%;
+  border-left: none;
+  border-bottom: 1px solid #ccc1c1;
+  border-right: none;
+}
+.hd5{
+  width: 9%;
+  border-left: none;
+  border-bottom: 1px solid #ccc1c1;
+  border-right: none;
+}
+.hd6{
+  width: 9%;
+  border-left: none;
+  border-bottom: 1px solid #ccc1c1;
+  border-right: none;
+}
+@media only screen and (max-width: 768px) {
+  table {
+      width: 770px;
+      
+    }
+  .table-container{
+    /* overflow: auto; */
+    overflow-x: scroll;
+      /* white-space: nowrap; */
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  
 }
